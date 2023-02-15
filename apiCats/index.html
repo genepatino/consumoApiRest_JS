@@ -4,13 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script defer src="cats.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>API Cats</title>
 </head>
 <body>
-    <h1>Soy un Gatito</h1>
-    <figure id="containerImag">
-    </figure>
-    <button onclick="reloadImag()" id="setCat">Otro gatito</button>
+    <main class="main_container">
+        <h1><i>Michis store</i></h1>
+        <div class="loader" id="loader"></div>
+        <section class="ramdon_michis">
+            <figure id="containerImag">
+            </figure>
+            <button onclick="loadRandomMichis()" id="setCat">Quiero ver más michis</button>
+        </section>
+        <section id="favorite_michis" class="favorite_michis">
+            <figure id="container_michis_favorites">
+            </figure>
+        </section>
+        <!-- <section id="upLoadingMichi">
+            <h3>Comparte fotos de tus michis</h3>
+            <form id="upLoadingMichiForm">
+                <input type="file" name="file" id="file">
+                <button type="button" onclick="upLoadMichiPhoto()">Subir foto</button>
+            </form>
+        </section> -->
+
+    </main>
+    
+    
+   
 </body>
 </html>
